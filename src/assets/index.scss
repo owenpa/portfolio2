@@ -28,8 +28,16 @@ body {
   height: 100%;
 }
 
-.content-container {
-  padding: 0em 4em;
+@media (min-width: 0px) {
+  .content-container {
+    padding: 0em 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .content-container {
+    padding: 0em 4em;
+  }
 }
 
 //!  ------ NAVBAR

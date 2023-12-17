@@ -23,9 +23,14 @@ body {
   font-size: 3vw;
 }
 
+.content-container {
+  justify-self: center;
+}
+
 #root {
   width: 100%;
   height: 100%;
+  display: grid;
 }
 
 @media (min-width: 0px) {
@@ -40,6 +45,22 @@ body {
   }
 }
 
+@media (max-width: 999px) {
+  body {font-size: 4vw !important; }
+  #navbar-container {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 30px !important;
+  }
+  .content-container {
+    width: 800px;
+  }
+}
+
 //!  ------ NAVBAR
 
 #navbar-container {
@@ -48,7 +69,7 @@ body {
     list-style-type: none !important;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     display: flex;
@@ -65,14 +86,22 @@ body {
   .navbar-link {
     text-decoration: none;
     color: $textColor;
-    transition: 0.2s;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     &:hover {
       font-weight: 800;
     }
   }
 
   button {
-    transition: 0.2s;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     &:hover {
       opacity: 50%;
     }
@@ -139,22 +168,16 @@ p {
 
 //! ------- PRODUCT
 
-@media (min-width: 600px) {
-  #product-container { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (min-width: 1000px) {
-  #product-container { grid-template-columns: repeat(3, 1fr); }
-}
-
 #product-container {
   padding-bottom: 1em;
-  display: grid;
-  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .pbox {
+  width: 50%;
   h3 {
     color: $mainColor;
     margin: 0;
@@ -162,7 +185,11 @@ p {
   a {
     color: $btColor;
     text-decoration: none;
-    transition: 0.2s;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     &:hover {
       font-weight: 500;
     }
@@ -184,7 +211,11 @@ p {
   a {
     color: $btColor;
     text-decoration: none;
-    transition: 0.2s;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     &:hover {
       font-weight: 900;
     }

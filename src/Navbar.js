@@ -1,4 +1,3 @@
-import resume from './assets/Owen Hill Resume.pdf'
 function Navbar() {
   return (
     <div id='navbar-container'>

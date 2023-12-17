@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b12aada2.css",
-    "main.js": "/static/js/main.709ce094.js",
+    "main.css": "/static/css/main.bfcce50b.css",
+    "main.js": "/static/js/main.5307af89.js",
+    "static/media/trendy.gif": "/static/media/trendy.fedee74745e3ba8b5083.gif",
+    "static/media/studywithme.gif": "/static/media/studywithme.3bcc67be659d063c811e.gif",
     "static/media/me.jpeg": "/static/media/me.d1436f1f264fbc772c29.jpeg",
-    "static/media/Owen Hill Resume.pdf": "/static/media/Owen Hill Resume.fb78c05a859838de294e.pdf",
+    "static/media/placeholder.jpg": "/static/media/placeholder.0884dcca2ee88c47ff86.jpg",
     "index.html": "/index.html",
-    "main.b12aada2.css.map": "/static/css/main.b12aada2.css.map",
-    "main.709ce094.js.map": "/static/js/main.709ce094.js.map"
+    "main.bfcce50b.css.map": "/static/css/main.bfcce50b.css.map",
+    "main.5307af89.js.map": "/static/js/main.5307af89.js.map"
   },
   "entrypoints": [
-    "static/css/main.b12aada2.css",
-    "static/js/main.709ce094.js"
+    "static/css/main.bfcce50b.css",
+    "static/js/main.5307af89.js"
   ]
 }

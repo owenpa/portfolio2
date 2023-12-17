@@ -3,6 +3,7 @@ import About from './About.js';
 import Products from './Products.js';
 import Certificates from './Certificates.js';
 import Interests from './Interests.js';
+import Testimonials from './Testimonials.js';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Products />
         <Certificates />
         <Interests />
+        {/* <Testimonials /> */}
       </div>
     </>
   );

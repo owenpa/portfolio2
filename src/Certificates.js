@@ -1,7 +1,7 @@
 function Certificates() {
   return (
     <div id="certificate-container">
-      <h3><a href='https://www.codesmith.io/'>Codesmith Immersive</a>  <i class="fa-solid fa-star fa-2xs"></i></h3> 
+      <h3><a href='https://www.codesmith.io/'>Codesmith Immersive</a>  <i className="fa-solid fa-star fa-2xs"></i></h3> 
       <p>Highly intense advanced residency for software engineering. Taught an extreme depth to all technologies that I'm currently aware of, provided numerous opportunities for mentorships, leading, and collaboration.</p>
       <time>2023</time>
 

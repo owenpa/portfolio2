@@ -206,6 +206,7 @@ p {
 
 #certificate-container {
   text-align: left;
+  padding-bottom: 0.7em;
   h3 {
     font-size: 0.8em;
     color: $mainColor;
@@ -233,6 +234,39 @@ p {
     color: $textColor;
     font-size: 0.4em;
     padding-bottom: 10px;
+  }
+}
+
+//! -------- Projects
+
+#projects-container {
+  text-align: left;
+  .projects-box {
+    padding: 0.3em 0;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-column-gap: 5%;
+    align-items: center;
+  }
+  .projects-description {
+    a { 
+      color: $btColor;
+      padding: 10px 0px;
+      text-decoration: none;
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  p {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  h2 {
+    color: $mainColor;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
   }
 }
 

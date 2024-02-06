@@ -34,7 +34,7 @@ body {
 }
 
 @media (min-width: 0px) {
-  .pbox {
+  .product-box {
     max-width: 100%;
     width: 100%;
   }
@@ -43,7 +43,7 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .pbox { width: 50%; }
+  .product-box { width: 50%; }
   .content-container { padding: 0em 4em; }
   #product-container { gap: 0; }
 }
@@ -179,7 +179,7 @@ p {
   border-radius: 4px;
 }
 
-.pbox {
+.product-box {
   // width: 50%;
   h3 {
     color: $mainColor;

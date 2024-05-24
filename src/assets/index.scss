@@ -55,7 +55,7 @@ body {
 
 @media (min-width: 1000px) {
   body { font-size: 30px !important; }
-  .content-container { width: 800px; }
+  .content-container { max-width: 800px; }
 }
 
 //!  ------ NAVBAR
@@ -181,6 +181,9 @@ p {
 
 .product-box {
   // width: 50%;
+  span {
+    color: white;
+  }
   h3 {
     color: $mainColor;
     margin: 0;

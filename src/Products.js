@@ -1,6 +1,6 @@
 import studywithmegif from "./assets/studywithme.gif"
 import trendygif from "./assets/trendy.gif"
-import placeholderImage from "./assets/placeholder.jpg"
+import praegif from "./assets/prae.gif"
 
 function Products() {
   return (
@@ -12,6 +12,16 @@ function Products() {
         <h3>Brizo</h3>
         <a href="https://github.com/oslabs-beta/Brizo">github</a>
         <p>A development tool focused around enabling streamlined Kubernetes cluster metrics and maintenance. Monitor cluster health, performance, and perform CIS standard security checks.</p>
+      </div>
+      <div className='product-box'>
+        <a href={praegif} target="_blank" rel="noreferrer">
+          <img src={praegif} alt="live demo of the prae gallery website" className="product-demo" />
+        </a>
+        <h3>Prae Gallery</h3>
+        <span>
+          <a href="https://prae-gallery.vercel.app/">live demo</a> | <a href="https://github.com/owenpa/finra-filter">github</a>
+        </span>
+        <p>An artist's gallery with a dashboard that allows analytics viewing, uploading, editing, and deleting of the posts.</p>
       </div>
       <div className='product-box'>
         <a href={studywithmegif} target="_blank" rel="noreferrer">
@@ -29,12 +39,12 @@ function Products() {
         <a href="https://github.com/stabbit/trendy">github</a>
         <p>A website that receives a location and returns all activities (food, monuments, parks, etc) and reviews before then analyzing the sentiment of recent reviews and sorting the results.</p>
       </div>
-      <div className='product-box'>
+      {/* <div className='product-box'>
         <img src={placeholderImage} alt="placeholder" className="product-demo" />
         <h3>Finra Filter</h3>
         <a href="https://github.com/owenpa/finra-filter">github</a>
         <p>Python application that fetches recent market data that was released by Finra, filters out stocks based on volume/demand, and returns a chart with the results displayed.</p>
-      </div>
+      </div> */}
     </div>
   )
 }

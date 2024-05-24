@@ -39,12 +39,6 @@ function Products() {
         <a href="https://github.com/stabbit/trendy">github</a>
         <p>A website that receives a location and returns all activities (food, monuments, parks, etc) and reviews before then analyzing the sentiment of recent reviews and sorting the results.</p>
       </div>
-      {/* <div className='product-box'>
-        <img src={placeholderImage} alt="placeholder" className="product-demo" />
-        <h3>Finra Filter</h3>
-        <a href="https://github.com/owenpa/finra-filter">github</a>
-        <p>Python application that fetches recent market data that was released by Finra, filters out stocks based on volume/demand, and returns a chart with the results displayed.</p>
-      </div> */}
     </div>
   )
 }

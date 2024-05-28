@@ -5,7 +5,6 @@ function Navbar() {
         <li><a className='navbar-link' href='#about-container'>ABOUT</a></li>
         <li><a className='navbar-link' href='#product-container'>PRODUCTS</a></li>
         <li><a className='navbar-link' href='#certificate-container'>CERTIFICATIONS</a></li>
-        <li><a className='navbar-link' href='#interests-container'>INTERESTS</a></li>
         <li><a className='navbar-link' href='#projects-container'>PROJECTS</a></li>
         <button className="faSocialButton" onClick={() => { window.open('https://github.com/owenpa', '_blank') }}><i className="fa-brands fa-github"></i></button>
         <button className="faSocialButton" onClick={() => { window.open('https://linkedin.com/in/owenghill/', '_blank') }}><i className="fa-brands fa-linkedin"></i></button>

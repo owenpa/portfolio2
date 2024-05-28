@@ -3,9 +3,24 @@ $textColor: #eeede7;
 $btColor: #cfcab9;
 $btColorDark: #181611;
 $mainColor: #dad5c8;
+:root {
+  --bgColor: light-dark(#fffaf1, #0f0e0a);
+  --text-color: light-dark(#181611, #eeede7);
+  --btColor: light-dark(#0f0e0a, #cfcab9);
+  --btColorDark: light-dark(#f8f0e0, #181611);
+  --main-color: light-dark(#000, #dad5c8);
+  --social-button: light-dark(#f8f0e0, #181611);
+
+}
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+* {
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 body {
@@ -17,7 +32,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $bgColor;
+  background-color: var(--bgColor);
   align-items: center;
   justify-content: center;
   font-size: 3vw;
@@ -50,7 +65,7 @@ body {
 
 @media (max-width: 999px) {
   body {font-size: 4vw !important; }
-  #navbar-container { font-size: 3vw; }
+  #navbar-container { font-size: 2.5vw; }
 }
 
 @media (min-width: 1000px) {
@@ -71,7 +86,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: $btColorDark;
+    background-color: var(--btColorDark);
   }
   li {
     float: left;
@@ -82,7 +97,7 @@ body {
   }
   .navbar-link {
     text-decoration: none;
-    color: $textColor;
+    color: var(--text-color);
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
@@ -94,25 +109,25 @@ body {
   }
 
   button {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     &:hover {
       opacity: 50%;
     }
   }
 
   .resume-button {
-    color: $btColorDark;
-    background-color: $btColor;
+    color: var(--btColorDark);
+    background-color: var(--btColor);
     letter-spacing: .1rem;
     border-radius: 4px;
-    border: 1px solid $btColorDark;
+    border: 1px solid var(--btColorDark);
     cursor: pointer;
     font-size: .5em;
-    color: $btColorDark;
+    color: var(--btColorDark);
     padding: 0 1.5em;
     height: 3em;
     margin: auto .5em;
@@ -125,8 +140,8 @@ body {
     border: none;
     border-radius: 10px;
     padding: 0em .5em;
-    background-color: #181611;
-    color: $mainColor;
+    background-color: var(--social-button);
+    color: var(--main-color);
     align-items: center;
   }
 }
@@ -146,20 +161,20 @@ body {
 
 h1 {
   margin: 0;
-  color: $textColor;
+  color: var(--text-color);
   text-shadow: 0px 0px 18px #eeede757;
   font-size: 1em;
 }
 
 h2 {
   margin: 0;
-  color: $textColor;
+  color: var(--text-color);
   font-size: .5em;
 }
 
 p {
   margin: 10px;
-  color: $textColor;
+  color: var(--text-color);
   font-size: .7em;
 }
 
@@ -185,11 +200,11 @@ p {
     color: white;
   }
   h3 {
-    color: $mainColor;
+    color: var(--main-color);
     margin: 0;
   }
   a {
-    color: $btColor;
+    color: var(--btColor);
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -212,11 +227,11 @@ p {
   padding-bottom: 0.7em;
   h3 {
     font-size: 0.8em;
-    color: $mainColor;
+    color: var(--main-color);
     margin: 0;
   }
   a {
-    color: $btColor;
+    color: var(--btColor);
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -230,11 +245,11 @@ p {
   p {
     margin: 0;
     font-size: 0.6em;
-    color: $textColor;
+    color: var(--text-color);
   }
   time {
     display: block;
-    color: $textColor;
+    color: var(--text-color);
     font-size: 0.4em;
     padding-bottom: 10px;
   }
@@ -253,7 +268,7 @@ p {
   }
   .projects-description {
     a { 
-      color: $btColor;
+      color: var(--btColor);
       padding: 10px 0px;
       text-decoration: none;
     }
@@ -267,7 +282,7 @@ p {
     margin: 0;
   }
   h2 {
-    color: $mainColor;
+    color: var(--main-color);
     margin-bottom: 10px;
     font-size: 1.5rem;
   }

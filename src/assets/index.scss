@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collapse-button {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  display: flex;
+  font-size: 15px;
+}
+
+.active, .collapse-button:hover {
+  background-color: #f1f1f1;
+}
+
+.collapse-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-color: #fcfcfc;
+  padding: 0px 36px;
+}
+
+// @keyframes swap-image {
+//   0%, 30% {
+//     background: url("");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+//   33%, 63% {
+//     background: url('');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+//   66%, 97% {
+//     background: url('');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+//   100% {
+//     background: url("");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+// }
+
+@keyframes swap-image {
+  0%, 100% {
+    background: url('./me.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.img-holder {
+  height: 600px;
+  -webkit-animation: swap-image 20s infinite normal;
+  animation: swap-image 20s infinite normal;
+}

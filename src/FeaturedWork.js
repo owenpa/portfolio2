@@ -4,7 +4,7 @@ import studyWithMe from './assets/studywithme.gif'
 import trendy from './assets/trendy.gif'
 function FeaturedWork() {
   return (
-    <div className="w-[800px]">
+    <div className="w-[800px] pb-8">
       <h2 className="text-3xl pb-2">Featured Work</h2>
       <span className="flex justify-between px-2 pb-2 border-b-2 border-solid border-neutral-500 font-semibold">
         <p>project</p>
